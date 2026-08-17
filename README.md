@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# lsm3 — an LSM tree index for PostgreSQL
+# Lsm3 — an LSM tree index for PostgreSQL
 
 `lsm3` is a PostgreSQL extension that adds an **LSM tree index access method**, built
 entirely out of ordinary Postgres B-Tree indexes underneath. The goal is **fast inserts**:
@@ -45,8 +44,6 @@ more work.
 To claw back some read cost, `lsm3` keeps **backend-local Bloom filters** for the immutable
 level runs. On an **equality lookup** on the first index key, a run whose Bloom filter says
 "definitely not here" is skipped entirely — no B-Tree descent at all.
-
-Details worth knowing:
 
 - Bloom filters apply only to **immutable level runs** — never the active tops (they keep
   changing) and never `base`.
@@ -170,6 +167,5 @@ The repo also contains standalone SQL scripts used for benchmarking and experime
 
 Based on [postgrespro/lsm3](https://github.com/postgrespro/lsm3) by Konstantin Knizhnik,
 extended here with multi-run tiered levels and per-run Bloom filters.
-=======
 # LSM-Trees-in-PostgreSQL
 >>>>>>> 964ea2b0abdf9f62383db1eab3eb16f0fe3c7e40
