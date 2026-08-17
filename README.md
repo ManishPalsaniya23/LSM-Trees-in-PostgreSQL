@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # lsm3 — an LSM tree index for PostgreSQL
 
 `lsm3` is a PostgreSQL extension that adds an **LSM tree index access method**, built
@@ -169,3 +170,6 @@ The repo also contains standalone SQL scripts used for benchmarking and experime
 
 Based on [postgrespro/lsm3](https://github.com/postgrespro/lsm3) by Konstantin Knizhnik,
 extended here with multi-run tiered levels and per-run Bloom filters.
+=======
+# LSM-Trees-in-PostgreSQL
+>>>>>>> 964ea2b0abdf9f62383db1eab3eb16f0fe3c7e40
