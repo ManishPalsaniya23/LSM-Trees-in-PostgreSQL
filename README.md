@@ -162,8 +162,3 @@ make installcheck
 
 The repo also contains standalone SQL scripts used for benchmarking and experiments
 (`bench_test.sql`, `bloom_test.sql`, `step_test.sql`, `lsm3vsourlsm.sql`, and others).
-
-## Credits
-
-Based on [postgrespro/lsm3](https://github.com/postgrespro/lsm3) by Konstantin Knizhnik,
-extended here with multi-run tiered levels and per-run Bloom filters.
